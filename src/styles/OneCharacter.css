@@ -1,0 +1,12 @@
+.basic-btn{
+    width:150px;
+    height:50px;
+    margin:20px;
+    border-radius:5px ;
+    background-color: rgb(37, 173, 185);
+    color:white;
+    border:4px solid rgb(138, 184, 69);
+    
+
+
+}
