@@ -10,6 +10,7 @@ function App() {
   return (
     <div className="App">
       <img src={rick} alt="logo de serie" className="logo"/>
+      <h1>Lista de personajes</h1>
       <BrowserRouter>
         <Routes>
         <Route path='/' element= {<AllCharacters/>}></Route>
