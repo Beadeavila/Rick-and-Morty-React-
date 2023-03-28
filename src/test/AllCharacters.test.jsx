@@ -7,12 +7,12 @@ beforeEach(()=>{
 })
 
 test('get charactersImg',async()=>{
-    const characterImg = await screen.findByRole('image');
+    const characterImg = await screen.findByRole('img');
     expect (characterImg).toBeInTheDocument();
 });
 
 test ('get charactersListName',async()=>{
-    const characterName = await screen.findByText('Morty Smith');
+    const characterName = await screen.findByText(/Rick Sanchez/i);
     expect (characterName).toBeInTheDocument();
 });
 
