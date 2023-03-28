@@ -5,7 +5,7 @@ import {rest} from 'msw';
 
 
 export const handlers = [
-        rest.get("https://rickandmortyapi.com/api/character"),(_req,res,ctx)=>{
+        rest.get("https://rickandmortyapi.com/api/character",(_req,res,ctx)=>{
                 return res(ctx.json({
                         "results":[
                         {"id": 1,
@@ -15,5 +15,5 @@ export const handlers = [
                         "gender": "Male"
                         }]
                 }))
-        }
+        })
 ];
